@@ -1,0 +1,19 @@
+server:
+  port: 8091
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+
+spring:
+  application:
+    name: clients
+  datasource:
+    driver-class-name: mongodb.jdbc.MongoDriver
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/KMSClients"
+      database: KMSClients
